@@ -1,9 +1,5 @@
 # 💎 Luxury Vault - Fullstack Portfolio
 
-<p align="center">
-  <img src="https://i.ibb.co/B2HFJNwn/luxuryvault.png" alt="luxuryvault" width="400">
-</p>
-
 > **⚠️ Disclaimer**: Este é um projeto estritamente acadêmico e de portfólio, desenvolvido para fins de aprendizado de tecnologias Fullstack. O nome e os itens são ilustrativos para demonstrar competências técnicas.
 
 ---

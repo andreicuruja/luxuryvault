@@ -1,3 +1,25 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.main-title {
+  text-align: center;
+  color: #D4AF37;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;

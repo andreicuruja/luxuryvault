@@ -1,7 +1,5 @@
 # 💎 Luxury Vault - Fullstack Portfolio
 
-![LuxuryVault Banner](<a href="https://ibb.co/chKV9LxY"><img src="https://i.ibb.co/B2HFJNwn/luxuryvault.png" alt="luxuryvault" border="0"></a>)
-
 > **⚠️ Disclaimer**: Este é um projeto estritamente acadêmico e de portfólio, desenvolvido para fins de aprendizado de tecnologias Fullstack. O nome e os itens são ilustrativos para demonstrar competências técnicas.
 
 ---
@@ -14,10 +12,8 @@ O **Luxury Vault** é uma plataforma de curadoria de itens de luxo, como veícul
 ### 🛠️ Tech Stack
 * **Frontend**: `React (Vite)` para uma interface reativa.
 * **Backend**: `Node.js` com `Express` para a API.
-* **Database**: `MySQL` (XAMPP) para persistência de dados.
-* **Estilização**: `![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)` com conceito *Stealth Wealth*.
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=flat-square&logo=mysql&logoColor=white) |
-
+* **Database**: ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=flat-square&logo=mysql&logoColor=white)`MySQL` (XAMPP) para persistência de dados.
+* **Estilização**: ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)`CSS3` com conceito *Stealth Wealth*.
 
 ---
 

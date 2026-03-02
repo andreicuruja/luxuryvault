@@ -10,10 +10,11 @@ O **Luxury Vault** é uma plataforma de curadoria de itens de luxo, como veícul
 ---
 
 ### 🛠️ Tech Stack
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=flat-square&logo=mysql&logoColor=white)
 * **Frontend**: `React (Vite)` para uma interface reativa.
 * **Backend**: `Node.js` com `Express` para a API.
-* **Database**: ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=flat-square&logo=mysql&logoColor=white)`MySQL` (XAMPP) para persistência de dados.
-* **Estilização**: ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)`CSS3` com conceito *Stealth Wealth*.
+* **Database**: `MySQL` (XAMPP) para persistência de dados.
+* **Estilização**: `CSS3` com conceito *Stealth Wealth*.
 
 ---
 

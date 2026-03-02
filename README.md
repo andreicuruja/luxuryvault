@@ -1,51 +1,74 @@
-💎 Luxury Vault - Fullstack Portfolio
-Disclaimer: Este é um projeto estritamente acadêmico e de portfólio, desenvolvido para fins de aprendizado de tecnologias Fullstack. O nome e os itens são ilustrativos para demonstrar competências técnicas.
+# 💎 Luxury Vault - Fullstack Portfolio
 
-🏎️ Sobre o Projeto
-O Luxury Vault é uma plataforma de curadoria de itens de luxo, como veículos de alta performance e alta relojoaria. O sistema foi construído com uma arquitetura Fullstack robusta, simulando um ambiente real de estoque onde os dados são consumidos diretamente de um banco de dados.
+![LuxuryVault Banner](https://sua-imagem-aqui.png)
 
-🛠️ Tecnologias Utilizadas
-O projeto utiliza o que há de mais moderno no ecossistema JavaScript:
+> **⚠️ Disclaimer**: Este é um projeto estritamente acadêmico e de portfólio, desenvolvido para fins de aprendizado de tecnologias Fullstack. O nome e os itens são ilustrativos para demonstrar competências técnicas.
 
-Frontend: React (Vite) para uma interface rápida e reativa.
+---
 
-Backend: Node.js com Express para a construção da API.
+### 🏎️ Sobre o Projeto
+O **Luxury Vault** é uma plataforma de curadoria de itens de luxo, como veículos de alta performance e alta relojoaria. O sistema foi construído com uma arquitetura **Fullstack** robusta, simulando um ambiente real de estoque onde os dados são consumidos dinamicamente de um banco de dados.
 
-Banco de Dados: MySQL (via XAMPP) para persistência de dados real.
+---
 
-Design: CSS customizado com foco na estética Stealth Wealth (minimalismo luxuoso).
+### 🛠️ Tech Stack
+* **Frontend**: `React (Vite)` para uma interface reativa.
+* **Backend**: `Node.js` com `Express` para a API.
+* **Database**: `MySQL` (XAMPP) para persistência de dados.
+* **Estilização**: `CSS3` com conceito *Stealth Wealth*.
 
-🚀 Funcionalidades e Aprendizados Técnicos
-Durante o desenvolvimento, foram aplicados conceitos avançados de engenharia de software:
 
-Integração de Dados: Consumo de API RESTful utilizando fetch e useEffect no React.
 
-Gerenciamento de Ambiente: Uso de variáveis de ambiente (.env) para segurança de credenciais do banco.
+---
 
-Tratamento de Erros: Implementação de fallbacks para imagens (404) e validação de conexão com o banco.
+### 🚀 Funcionalidades Técnicas
+* **Integração Real**: Consumo de API RESTful utilizando `fetch` e `useEffect`.
+* **Segurança**: Gerenciamento de credenciais via variáveis de ambiente (`.env`).
+* **Robustez**: Tratamento de erros de renderização (*Image Fallback*) e logs de conexão.
+* **Clean Code**: Organização modular de componentes e separação de responsabilidades.
 
-Componentização: Estrutura organizada de componentes reutilizáveis e estilização isolada.
+---
 
-🔧 Como Rodar o Motor (Setup)
-Banco de Dados: Importe o script SQL no seu phpMyAdmin para criar a tabela luxury_items.
+### 🔧 Setup do Motor (Como Rodar)
 
-Variáveis de Ambiente: Configure o arquivo .env na pasta /server com suas credenciais do MySQL.
+1. **Configurar Banco de Dados**:
+   Importe o script SQL no seu **phpMyAdmin** para criar a tabela `luxury_items`.
 
-Instalação:
+2. **Variáveis de Ambiente**:
+   Crie um arquivo `.env` na pasta `/server`:
+   ```env
+   DB_HOST=localhost
+   DB_USER=root
+   DB_PASS=suasenha
+   DB_NAME=luxuryvault
+Instalação e Execução:
 
 Bash
-# Na pasta server e na pasta client
-npm install
-Execução:
+# Terminal 1 (Server)
+cd server && npm install && node server.js
 
-Bash
-# No terminal do server
-node server.js
-# No terminal do client
-npm run dev
-📝 Diário de Bordo e Evolução
-Este projeto documenta minha transição para o desenvolvimento Fullstack, aplicando a mesma precisão e atenção aos detalhes que utilizo na mecânica automotiva.
+# Terminal 2 (Client)
+cd client && npm install && npm run dev
 
-Desafio: Depuração de conectividade entre Node e MySQL devido a permissões de acesso.
+---
 
-Solução: Refatoração do carregamento do dotenv para caminhos absolutos e ajuste de pools de conexão.
+### 📓 2. Diário de Bordo: `PROGRESS.md`
+*Este arquivo serve para mostrar ao recrutador como você resolve problemas sob pressão.*
+
+# 🛠️ Log de Progressão: Luxury Vault
+
+### 📅 Dia 02/03/2026: O Desafio da Conectividade
+**Status**: Concluído ✅
+
+#### 🔍 O Problema
+Hoje o sistema apresentou dois "vazamentos" críticos:
+1.  **Variáveis Fantasmas**: O servidor Node.js acusava `injecting env (0)`, resultando em erro de acesso ao MySQL (`Access denied`).
+2.  **Imagens Quebradas**: Os cards renderizavam o texto, mas as fotos (Porsche/AP) retornavam erro 404 ou ficavam com altura 0px.
+
+#### 🛠️ O Reparo (Mão na Massa)
+* **Refatoração do `.env`**: Descobri que o `dotenv` não estava encontrando o arquivo pelo caminho relativo. Forcei o carregamento usando `path.resolve(__dirname, '.env')` e limpei as redundâncias nos arquivos de configuração.
+* **Limpeza de Componentes**: Removi arquivos duplicados (`ItemCards.jsx` vs `ItemCard.jsx`) que estavam causando conflitos de estilo no Vite.
+* **Ajuste de Lataria (CSS)**: Defini alturas fixas para os containers de imagem e implementei o `object-fit: cover`, garantindo que as fotos apareçam sem distorção.
+
+#### 💡 Aprendizado do Dia
+No desenvolvimento Fullstack, assim como na mecânica, um fio solto (caminho de arquivo errado) pode parar o motor inteiro. A ordem de carregamento dos módulos e a limpeza de arquivos obsoletos são fundamentais para manter o sistema rodando "redondo".
